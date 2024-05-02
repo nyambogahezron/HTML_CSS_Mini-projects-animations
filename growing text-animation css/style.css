@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #262626;
+}
+.growing{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.growing span{
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+    text-transform: uppercase;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    border: 1px solid rgba(255, 255, 255, .4);
+    margin: 0 -2.5px;
+    animation: animate 2s linear infinite;
+}
+@keyframes animate{
+    0%{
+        color: #fff;
+        box-shadow: 0 2px 10px rgba(255,0,0,1);
+        border: 1px solid rgba(255, 0, 0, 1);
+    }
+    33.3%{
+        color: #ff0;
+        box-shadow: 0 2px 10px rgba(255,0,1);
+        border: 1px solid rgba(255, 255, 0, 1);
+    }
+    66.6%{
+        color: #0f0;
+        box-shadow: 0 2px 10px rgba(0,255,1);
+        border: 1px solid rgba(0, 255, 0, 1);
+    }
+    100%{
+        color: #fff;
+        box-shadow: 0 2px 10px rgba(255,0,0,1);
+        border: 1px solid rgba(255, 0, 0, 1);
+    }
+}
+.growing span:nth-child(1){
+    animation-delay: 0s;
+}
+.growing span:nth-child(2){
+    animation-delay: 0.1s;
+}
+.growing span:nth-child(3){
+    animation-delay: 0.2s;
+}
+.growing span:nth-child(4){
+    animation-delay: 0.3s;
+}
+.growing span:nth-child(5){
+    animation-delay: 0.4s;
+}
+.growing span:nth-child(6){
+    animation-delay: 0.5s;
+}
+.growing span:nth-child(7){
+    animation-delay: 0.6s;
+}

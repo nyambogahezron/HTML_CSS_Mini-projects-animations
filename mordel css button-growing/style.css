@@ -1,0 +1,79 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #27282c;
+    flex-direction: column;
+    gap: 60px;
+}
+a{
+    position: relative;
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    padding: 10px 30px;
+    transition: 0.5s;
+}
+a:hover{
+    letter-spacing: 0.25em;
+    background: var(--cr);
+    color: var(--cr);
+    box-shadow: 0 0 35px var(--cr);
+}
+a::before{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #27282c;
+}
+a span{
+    position: relative;
+    z-index: 1;
+}
+a i{
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+a i::before{
+    content: '';
+    position: absolute;
+    top: -3.5px;
+    left: 80%;
+    width: 10px;
+    height: 5px;
+    transform: translateX(-50%);
+    border: 2px solid var(--cr);
+    background: #27282c;
+    transition: 0.5s;
+}
+a:hover i::before{
+    width: 20px;
+    left: 20%;
+}
+a i::after{
+    content: '';
+    position: absolute;
+    bottom: -3.5px;
+    left: 20%;
+    width: 10px;
+    height: 5px;
+    transform: translateX(-50%);
+    border: 2px solid var(--cr);
+    background: #27282c;
+    transition: 0.5s;
+}
+a:hover i::after{
+    width: 20px;
+    left: 80%;
+}

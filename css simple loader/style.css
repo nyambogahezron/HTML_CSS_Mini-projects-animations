@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #334aff;
+}
+.circleLoader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid rgba(255, 255, 255, .1);
+    border-top: 10px solid #ffff;
+    animation: animate 1.5s infinite linear;
+}
+@keyframes animate{
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}

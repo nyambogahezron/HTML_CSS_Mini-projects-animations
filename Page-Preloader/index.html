@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Portifolia</title>
+
+	<link rel="stylesheet" type="text/css" href="index.css">
+	
+</head>
+
+<body>
+
+	<!----========preloader=============-->
+	<div id="preloader"></div>
+
+
+
+
+
+
+<div class="main-container">
+<div class="aside">
+<div class="logo">
+	<a href="#"><span>H</span>ezron</a>
+</div>
+
+<ul class="nav">
+	<li><a href="#home" class="nav-link"><i class="fa fa-home"></i>Home</a></li>
+	<li><a href="#about" class="nav-link"><i class="fa fa-user"></i> About</a></li>
+	<li><a href="#services" class="nav-link"><i class="fa fa-list"></i> Services</a></li>
+	<li><a href="#portfolio" class="nav-link"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+	<li><a href="#contact" class="nav-link"><i class="fa fa-comments"></i>Contact</a></li>
+</ul>
+
+</div>
+
+<!-- .....Main Content Start....-->
+
+<div class="main-content">
+	<!-- .....home Section Start....-->
+
+		
+<section class="home active section" id= "home"> 
+    <div class="mood">
+        <img src="sun.png" alt="" srcset="" id="icon">
+    </div>
+    
+  <div class="container padd-15">
+
+  	 	<div class="row">
+  		<div class="home-info">
+  			<h3 class="hello">Hello, My Name Is<span class="name"> Nyamboga Hezron </span> </h3>
+  			<h3 class="my-profession">I'm a <span class="typing">Web Designer </span> </h3>
+  			<p>I'm a web designer with extensive experience for over 10 years.My experience for over 10 years.My expertise is to create and website design,graphic design, and many more...</p>
+  			<a href="C:\Users\EzzhJunior\Desktop\portifoliadesgn2\cv\my_cv.pdf" download><button class="btn">Download CV</button></a>
+
+  			</div>
+  			<div class="home-img">
+  			<img src="hero.jpg">
+  		</div>
+  	</div>
+  </div>
+</div>
+</section>
+</div>
+<script>
+  var icon = document.getElementById("icon");
+  
+  icon.onclick = function(){
+    document.body.classList.toggle("dark");
+    if(document.body.classList.contains("dark")){
+        icon.src = "sun.png"
+    }else{
+        icon.src = "moon.png"
+    }
+  }
+  
+</script>
+<script>
+
+	var loader = document.getElementById("preloader");
+
+	window.addEventListener("load", function(){
+		loader.style.display = "none";
+	})
+</script>
+</body>
+</html>

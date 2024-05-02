@@ -1,0 +1,104 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body{
+	background-position: center;
+	background-color: orange;
+	background-size: cover;
+	height: 100hv;
+}
+
+.container .sideA{
+	border: none;
+	border-radius: 3px;
+	background-color: green;
+	display: block;
+	width: 70px;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 30px 15px;
+	position: fixed;
+	cursor: pointer;
+	transition: width 0.5s;
+	backdrop-filter: blur(5px);
+}
+.container .sideA:hover{
+	width: 150px;
+}
+
+.container .SideB{
+	border: none;
+	border-radius: 3px;
+	background-color: red;
+	display: block;
+	width: 150px;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding: 30px 15px;
+	
+}
+
+.container .main{
+	border: none;
+	border-radius: 3px;
+	background-color: blue;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 150px;
+	padding: 30px 15px;
+}
+
+.container .titlebar{
+	background-color: yellow;
+	width: 100%;
+	height:20px;
+	position: fixed;
+	top: 0;
+	left: 150px;
+	padding: 30px 15px;
+	display: none;
+}
+.container .main .textbox{
+	left: 0;
+	top: 0;
+	width: 250px;
+	height: 60%;
+	border: 2px solid red;
+	border-radius: 30px;
+	background-color: yellowgreen;
+	margin: 5px;
+	margin-top: 0;
+	}
+	.container .main .textbox:hover{
+		background-color: yellow;
+
+	}
+	.container .main .textbox{
+		padding: 40px 20px;
+	}
+	.container .main .textbox .txt:hover{
+		color: red;
+		}
+
+
+
+	.container .main .textbox .txt::after{
+		content: "";
+		top: 0;
+		left: 0;
+		border: 1px solid blue;
+	}
+	.container .main .textbox h1{
+		padding: 40px 20px;
+	}

@@ -1,0 +1,111 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: #f6fbff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 30px;
+    position: relative;
+    margin-bottom: 80px;
+}
+h1::after{
+    content: "";
+    width: 150px;
+    height: 3px;
+    background: linear-gradient(to right, #f44336, #9f4db5);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.review-box{
+    width: 90%;
+    max-width: 700px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: -10px 10px 40px rgba(0,0,0,0.25);
+    position: relative;
+    overflow: hidden;
+}
+.card{
+    height: 300px;
+    padding: 40px;
+    color: #777;
+    line-height: 22px;
+    box-sizing: border-box;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+}
+.card::before{
+    content: "";
+    width: 110px;
+    height: 110px;
+    border-bottom-right-radius: 100%;
+    background: #f44336;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.profile img{
+    width: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.profile h3{
+    font-size: 26px;
+    color: #f44336;
+    margin-bottom: 8px;
+}
+#slide{
+    width: 100%;
+    padding-right: 60px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.side-bar{
+    width: 60px;
+    height: 100%;
+    padding: 15px 0;
+    box-sizing: border-box;
+    background: #f44336;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.side-bar img{
+    width: 25px;
+    padding: 5px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+::selection{
+    background: #f44336;
+    color: #fff;
+}

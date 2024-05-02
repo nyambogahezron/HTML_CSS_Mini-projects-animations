@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <h1>Customer Reviews</h1>
+        <div class="review-box">
+            <div id="slide">
+                <div class="card">
+                   <div class="profile">
+                    <img src="pic1.jpg" alt="" srcset="">
+                    <div>
+                        <h3>Riley Olie</h3>
+                        <p>Web Designer</p>
+                    </div>
+
+                </div>
+                    <p>Many people feel that there is limited amount
+                        of abundance, wealth, or chance to succeed in life.
+                        Futhermore, there is a solid belief thay is if one
+                        person succeeds, another must fail. Many people feel
+                        that there is limited amount
+                        of abundance, wealth, or chance to succeed in life
+                    </p>
+                   
+                </div>
+                <div class="card">
+                    <div class="profile">
+                     <img src="pic2.jpg" alt="" srcset="">
+                     <div>
+                         <h3>Mark Kings</h3>
+                         <p>Web Developer</p>
+                     </div>
+ 
+                 </div>
+                     <p>Many people feel that there is limited amount
+                         of abundance, wealth, or chance to succeed in life.
+                         Futhermore, there is a solid belief thay is if one
+                         person succeeds, another must fail. Many people feel
+                         that there is limited amount
+                         of abundance, wealth, or chance to succeed in life
+                     </p>
+                    
+                 </div>
+                 <div class="card">
+                    <div class="profile">
+                     <img src="pic3.jpg" alt="" srcset="">
+                     <div>
+                         <h3>Ann Junior</h3>
+                         <p>Software Develper</p>
+                     </div>
+ 
+                 </div>
+                     <p>Many people feel that there is limited amount
+                         of abundance, wealth, or chance to succeed in life.
+                         Futhermore, there is a solid belief thay is if one
+                         person succeeds, another must fail. Many people feel
+                         that there is limited amount
+                         of abundance, wealth, or chance to succeed in life
+                     </p>
+                    
+                 </div>
+                 <div class="card">
+                    <div class="profile">
+                     <img src="pic4.jpg" alt="" srcset="">
+                     <div>
+                         <h3>Brian john</h3>
+                         <p>Web Designer</p>
+                     </div>
+ 
+                 </div>
+                     <p>Many people feel that there is limited amount
+                         of abundance, wealth, or chance to succeed in life.
+                         Futhermore, there is a solid belief thay is if one
+                         person succeeds, another must fail. Many people feel
+                         that there is limited amount
+                         of abundance, wealth, or chance to succeed in life
+                     </p>
+                    
+                 </div>
+            </div>
+            <div class="side-bar">
+                <img src="up-arrow.png" alt="" srcset="" id="upArrow">
+                <img src="down-arrow.png" alt="" srcset="" id="downArrow">
+            </div>
+        </div>
+    </div>
+<script>
+    var slide = document.getElementById("slide");
+    var upArrow = document.getElementById("upArrow");
+    var downArrow = document.getElementById("downArrow");
+
+    let x = 0;
+    upArrow.onclick = function(){
+        if(x > "-900"){
+            x = x - 300;
+            slide.style.top = x + "px";
+        }
+    }
+
+    downArrow.onclick = function(){
+        if(x < 0){
+            x = x + 300;
+            slide.style.top = x + "px";
+        }
+    }
+</script>
+
+
+</body>
+</html>

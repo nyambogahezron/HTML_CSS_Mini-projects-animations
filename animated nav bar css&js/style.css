@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e91e63, #673ab7);
+}
+.navigation{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50px;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 10px 15px rgba(0, 0, 0,0.05);
+}
+.navigation.active{
+    width: 600px;
+}
+.navigation .toggleMenu{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+    transition-delay: 0.5s;
+}
+.navigation.active .toggleMenu{
+    background: #ff4181;
+    transition-delay: 0s;
+    transform: translateY(60px);
+    width: 30px;
+    height: 30px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0,0.05);
+
+}
+.navigation .toggleMenu::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: #333;
+    transform: translateY(-5px);
+    transition: 0.5s;
+}
+.navigation .toggleMenu::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: #333;
+    transform: translateY(5px);
+    transition: 0.5s;
+}
+.navigation.active .toggleMenu::before{
+    background: #fff;
+    transform: translateY(0px) rotate(45deg) scale(0.6);
+}
+.navigation.active .toggleMenu::after{
+    background: #fff;
+    transform: translateY(0px) rotate(315deg) scale(0.6);
+}
+.navigation li{
+    list-style: none;
+    transition: 0.5s;
+    transform: scale(0);
+}
+.navigation.active li{
+    transition-delay: 0.75s;
+    display: flex;
+    transform: scale(1);
+}
+.navigation li a{
+    text-decoration: none;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition: 0.5s;
+    font-weight: 700;
+}
+.navigation li a:hover{
+    background: #ff4181;
+    color: #fff;
+}

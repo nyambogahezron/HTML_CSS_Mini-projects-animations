@@ -1,0 +1,169 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all.2s linear;
+    text-transform: capitalize;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.heading {
+    text-align: center;
+    padding: 5px 10px;
+}
+
+span {
+    font-size: 30px;
+    background: rgba(255, 165, 0, .2);
+    color: red;
+    border-radius: 5px;
+    padding: .10px 5px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.book span .space {
+    background: none;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 5px;
+    background: blue;
+    color: #fff;
+    padding: 5px 10px;
+    border: 6px solid black;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn:hover {
+    background: rgba(105, 95, 76, 0.2);
+    color: blue;
+}
+
+html {
+    font-size: 60%;
+    overflow-x: hidden;
+    scroll-padding-top: 25px;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 30px;
+    font-weight: bolder;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+header .navbar {
+    display: block;
+}
+
+header .navbar a {
+    color: #fff;
+    ;
+    font-size: 20px;
+    margin: 10px;
+    display: inline-flex;
+}
+
+header .navbar a:hover {
+    color: blue;
+}
+
+header .icons i {
+    font-size: 17px;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+header .icons i:hover {
+    color: black;
+}
+
+
+#menu-bar {
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 1px;
+    font-size: 20px;
+    padding: 7px 13px;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width:1200px) {
+    html {
+        font-size: 60%;
+    }
+}
+
+@media(max-width:990px) {
+    .header {
+        padding: 10px;
+    }
+    section {
+        padding: 12px;
+    }
+}
+
+@media(max-width:768px) {
+    #menu-bar {
+        display: initial;
+    }
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background: #333;
+        border-top: 1px solid rgba(255, 255, 255, .2);
+        padding: 5px 10px;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    header .navbar a {
+        display: block;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px;
+        background: #222;
+    }
+    .contact .row form .inputBox input {
+        width: 100%;
+    }
+}
+
+@media(max-width:450px) {
+    html {
+        font-size: 60%;
+    }
+    .heading span {
+        font-size: 30px;
+    }
+}
